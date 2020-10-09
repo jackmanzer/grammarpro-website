@@ -180,7 +180,7 @@ ul {
   margin-top: auto; 
   display: none;
   width: 11rem;
-  max-height: 85.1;
+  max-height: 85px;
 }
 
 /* navigation */
@@ -893,12 +893,11 @@ ul {
 
 }
 
-    @media screen and (min-width: 808px){
-
-
+@media screen and (min-width: 808px) {
     .header h1 {
         margin-left: 2rem;
     }
+}
 
 @media screen and (min-width: 824px) {
     
