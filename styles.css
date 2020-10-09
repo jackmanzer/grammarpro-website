@@ -1,3 +1,4 @@
+/**** BEGIN: CSS RESET ****/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -55,6 +56,8 @@ input {
 img {
     border-style: none;
 }
+
+/**** END: CSS RESET ****/
 
 
 /****** Breakpoints *****
@@ -895,10 +898,6 @@ ul {
 
     .header h1 {
         margin-left: 2rem;
-    }
-
-    .pencils {
-    }
     }
 
 @media screen and (min-width: 824px) {
