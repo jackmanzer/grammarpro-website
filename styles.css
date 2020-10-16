@@ -1069,6 +1069,10 @@ ul {
     display: none;
 }
 
+.sec-con-blockquote {
+    display: none;
+}
+
 
 .secondary-content h2 {
     align-self: flex-start;
@@ -1083,7 +1087,7 @@ ul {
     margin-top: 1.25rem;
 }
 
-.secondary-content p {
+.sec-text-wrap p {
     width: calc(100% - 2rem);
     margin: 0 auto;
     hyphens: auto;
@@ -1110,26 +1114,60 @@ ul {
 .secondary-content img {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: calc(100% - 6rem);
-    max-width: 17.6875em;
-    margin-right: 10%;
+    margin-right: 13%;
+    max-width: 15em;
 }
 
-.sec-wrap-img {
+/* .sec-wrap-img {
     display: none;
-}
+} */
 
 /**** END: SECONDARY CONTENT BASE STYLES ****/
 
 /**** BEGIN: SECONDARY CONTENT MEDIA QUERIES ****/
 
-@media screen and (min-width: 602px) { 
+@media screen and (min-width: 580px) { 
+   
+    .secondary-content {
+        padding-top: 0;
+    }
     .sec-text-wrap {
-        width: 35.6em;
+        max-width: 35.6em;
+    }
+
+    .sec-img-background {
+        padding-top: 4.8em;
+        background-color: #313166;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2em;
+    }
+
+    .secondary-content img {
+        text-align: none;
+        margin-right: 0;
+    }
+    .sec-img-background p {
+        color: white;
+        margin-right: 1.5rem;
+        font-weight: 500;
+    }
+
+    .sec-img-background span {
+        margin-top: 1rem;
+        font-weight: 500;
+        display: block;
+        color: white;
+        line-height: 145%;
     }
 
     .secondary-content ul {
         margin-left: 1em;
+    }
+
+    .sec-con-blockquote {
+        display: block;
     }
    
 
@@ -1138,23 +1176,15 @@ ul {
 @media screen and (min-width: 690px) { 
    
     .sec-img-background {
-        display: none;
+         padding-top: 1.8em;
     }
-    .secondary-content {
-        padding-top: 2em;
-    }
+     
 
-    .sec-wrap-img {
-        display: block;
-        margin: 0;
-    }
-    .sec-img-wrap {
-        margin: 0;
-    }
+    .sec-img-background p {
+       margin-right: 2rem;
+    } 
 
-    .sec-content img {
-        width: 600px;
-    }
+    
 
     .alt-nav {
         display: block;
