@@ -1,0 +1,30 @@
+{
+  "name": "hanging-punctuation",
+  "version": "0.2.3",
+  "description": "A polyfill for proper hanging punctuation in CSS.",
+  "homepage": "https://github.com/kennethormandy/hanging-punctuation",
+  "author": "Kenneth Ormandy <kenneth@chloi.io> (http://kennethormandy.com)",
+  "license": "MIT",
+  "private": true,
+  "repository": "git@github.com:kennethormandy/hanging-punctuation.git",
+  "keywords": [
+    "type",
+    "typography",
+    "css",
+    "stylefill",
+    "punctuation"
+  ],
+  "scripts": {
+    "test": "static -H '{\"Cache-Control\": \"no-cache, must-revalidate\"}'",
+    "concat": "cat node_modules/stylefill/js/stylefill.js hanging-punctuation.js >> hanging-punctuation.min.js",
+    "minify": "minify hanging-punctuation.min.js",
+    "build": "npm run concat && npm run minify"
+  },
+  "dependencies": {
+    "stylefill": "git://github.com/kennethormandy/stylefill"
+  },
+  "devDependencies": {
+    "minify": "~0.6.4",
+    "node-static": "~0.7.4"
+  }
+}

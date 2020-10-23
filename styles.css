@@ -160,13 +160,6 @@ ul {
     } 
 }   
 
-@media screen and (min-width: 1200px){ 
-
-    body {
-        font-size: 20px;
-    }
-}
-
 /**** END: GLOBAL MEDIA QUERIES ****/
 
 /**** BEGIN: HEADER BASE STYLES ****/
@@ -378,7 +371,7 @@ ul {
 .headshot {
     margin-top: .25rem;
     width: calc(100% - 5rem);
-    max-width: 16em;
+    max-width: 250px;
     height: auto;
     margin-bottom: 1rem;
 }
@@ -1077,7 +1070,8 @@ ul {
 .secondary-content h2 {
     align-self: flex-start;
     margin-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.61em;
+    margin-bottom: 0.31em;
 }
 
 .secondary-content h4 {
@@ -1091,12 +1085,12 @@ ul {
     width: calc(100% - 2rem);
     margin: 0 auto;
     hyphens: auto;
-    margin-top: .5rem;
+    margin-bottom: 1.375em;
 }
 
 .secondary-content ul {
     list-style-type: disc;
-    margin-left: 3.5em;
+    margin-left: 2.5em;
     margin-right: 1rem; 
 }
 .secondary-content li {
@@ -1111,16 +1105,45 @@ ul {
     text-align: right;
 }
 
-.secondary-content img {
+.sec-con-v-photo {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-right: 13%;
+    margin-right: 11%;
     max-width: 15em;
 }
 
-/* .sec-wrap-img {
-    display: none;
-} */
+.sec-con-h-photo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 11%;
+    max-width: 25em;
+    margin-left: 2rem;
+}
+
+.sec-con-button {
+    text-align: center;
+    padding-top: 1.450em; 
+    padding-bottom: 1.450em;
+    border-radius: 15px;
+    font-family: 'Rubik';
+    margin-top: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 13em; 
+    background-color: var(--button-blue);
+    transition: transform 400ms ease-in-out;
+}
+
+.sec-con-button:hover {
+    transform: translateY(-2px);
+    background-color: var(--button-hover);
+}
+
+.sec-con-button a { 
+    color: var(--creme);
+    text-decoration: none;  
+}
 
 /**** END: SECONDARY CONTENT BASE STYLES ****/
 
@@ -1144,17 +1167,26 @@ ul {
         padding-bottom: 2em;
     }
 
-    .secondary-content img {
+    .sec-con-v-photo {
         text-align: none;
         margin-right: 0;
     }
+
+    .sec-con-h-photo {
+        text-align: none;
+        margin-right: 0;
+    }
+
+
     .sec-img-background p {
         color: white;
         margin-right: 1.5rem;
         font-weight: 500;
+        text-align: center;
     }
 
     .sec-img-background span {
+        margin-right: 3rem;
         margin-top: 1rem;
         font-weight: 500;
         display: block;
@@ -1162,15 +1194,16 @@ ul {
         line-height: 145%;
     }
 
-    .secondary-content ul {
-        margin-left: 1em;
-    }
-
     .sec-con-blockquote {
         display: block;
     }
    
-
+}
+@media screen and (min-width: 607px) { 
+    .secondary-content ul {
+        
+        margin-left: 1em;
+    }
 }
 
 @media screen and (min-width: 690px) { 
@@ -1183,8 +1216,6 @@ ul {
     .sec-img-background p {
        margin-right: 2rem;
     } 
-
-    
 
     .alt-nav {
         display: block;
@@ -1213,11 +1244,30 @@ ul {
         color: var(--link-hover);
     }
 }
+
 /**** END: SECONDARY CONTENT MEDIA QUERIES ****/
 
+/**** BEGIN: CLASS ASSIGNMENTS STYLES ****/
 
 
+    .class-assign-ul {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 
+/**** END: CLASS ASSIGNMENTS STYLES ****/
+
+/**** BEGIN: CLASS ASSIGNMENTS MEDIA QUERIES ****/
+
+@media screen and (max-width: 500px) { 
+
+.class-assign-ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+}
+/**** END: CLASS ASSIGNMENTS MEDIA QUERIES ****/
 
 
 
@@ -1227,17 +1277,22 @@ ul {
 
 /* To Do's */
 /* 
-1.
+
+- text for college essays--HIGH 
+- fix javascript for previes--HIGH 
 
 
-2.Image Resolutions 
-2. Focus Pseudo Class
-3. font size changing in second-row 
-3. Pagination display 
-4. Margins images on top 
-5. text enlarged on landscape view on mobile 
-6. fix header 
-7. set line heights 
-8. fix form function and layout 
+
+
+- image resolutions |  
+- mobile button interactions 
+- font size changing in second-row  
+- text enlarged on landscape view on mobile 
+- revise secondary-content text 
+- margins for secondary-content text 
+- eliminating scroll bar on drop down navigation 
+- input length adjustments 
+
+
 */ 
 
