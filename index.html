@@ -11,62 +11,61 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="header">
-      
+    <header class="header">   
       <div class="title-container">  
         <img class="apple" src="img/apple.png">
         <h1>The Grammar Pro</h1>
         <img class="pencils" src="img/pencils.png">
       </div>
       
-<input class="nav-toggle" id="nav-toggle" type=checkbox>  
+      <input class="nav-toggle" id="nav-toggle" type=checkbox>  
       
       <label class="nav-toggle-label" for="nav-toggle" id=hamburger-menu> 
       <span><img src="img/hamburger-menu.svg"></span></label>
       
-     <nav class="navigation" id="navigation"> 
+      <nav class="mobile_tablet_nav"> 
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="test-prep.html">Test Prep</a></li>
           <li><a href="college-writing-prep.html">College Writing Prep</a></li>
           <li><a href="class-assignments.html">Class Assignments</a></li>
           <li><a href="college-essays.html">College Essays</a></li>
-          <li><a href="test-prep.html">Test Prep</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-
     </header>
 
     <section class="first-row">
-     <div class="container2">
-      <div class="container3">
-       <h3>How Can I Help?</h3>
-        <nav class="second-nav"> 
-         <ul>
-          <li><a href="college-writing-prep.html">College Writing Prep</a></li>
-          <li><a href="class-assignments.html">Class Assignments</a></li>
-          <li><a href="college-essays.html">College Essays</a></li>
-          <li><a href="test-prep.html">Test Prep</a></li>
-         </ul>
-       </nav>
+      <div class="fr-centralize-container">
+        <div class="second-nav-container">
+          <h3>How Can I Help?</h3>
+          <nav class="second-nav"> 
+            <ul>
+              <li><a class="button" href="college-writing-prep.html">College Writing Prep</a></li>
+              <li><a class="button" href="class-assignments.html">Class Assignments</a></li>
+              <li><a class="button" href="college-essays.html">College Essays</a></li>
+              <li><a class="button" href="test-prep.html">Test Prep</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="headshot-bio-container">
+          <img class="headshot" src="img/headshot.png">
+          <h4>Meet Jack, <br>
+              The Grammar Pro</h4>
+          <p>Jack has helped dozens of students write 
+             better than they ever thought possible.</p>
+          <a href="about.html">See Qualifications</a>  
+        </div> 
       </div>
-      <div class="container4">
-        <img class="headshot" src="img/headshot.png">
-        <h3>Meet Jack, <br>
-            The Grammar Pro</h3>
-        <p>Jack has helped dozens of students write 
-          better than they ever thought possible.</p>
-        <a href="about.html">See Qualifications</a>  
-     </div> 
-    </div>
-   </section>
-   <section class="second-row">
+    </section>
+
+    <section class="second-row">
       
-      <h2>What They Say</h2>
+      <h3>What They Say</h3>
 
       <img class="stars" src="img/stars.png">
       
-      <div class="container5">
+      <div class="testimonial-container">
         <img class="quote-mark" src="img/quote-mark-left.png">
         <p>“Jack really helped me understand a lot of English and 
             reading topics that I was struggling with for the SAT 
@@ -78,10 +77,12 @@
       </div>
 
       <span>&#8212; Sanjana</span>
-      <hr>
+      
+   
 
       <img class="stars" src="img/stars.png">
-      <div class="container5">
+
+      <div class="testimonial-container">
         <img class="quote-mark" src="img/quote-mark-left.png">
         <p>“It was a great experience. Jack was responsive and always 
             had a plan when it came to attacking the sat. Always brought 
@@ -91,10 +92,12 @@
       </div>
 
       <span>&#8212; Dihan</span>
-      <hr>
+      
+   
 
       <img class="stars" src="img/stars.png">
-      <div class="container5">
+      
+      <div class="testimonial-container">
         <img class="quote-mark" src="img/quote-mark-left.png">
          <p>“Mr. Jack is a great English tutor! He covers everything you 
              need to learn, and he will answer every single question you 
@@ -105,7 +108,8 @@
       </div>
 
       <span>&#8212; Anonymous</span>
-      <hr>
+      
+    
 
       <a href="more-praise.html"> See More</a>
 
@@ -113,8 +117,8 @@
    
     <section class="third-row">
      
-      <h2>Simple, Intuitive<br>
-          Curriculum</h2>
+      <h3>Simple, Intuitive<br>
+          Curriculum</h3>
      
       <div class="pagination">
         <ul>
@@ -129,14 +133,14 @@
         </ul> 
       </div>
 
-      <div class="cur-main-con">
+      <div class="cur-main-container">
         <div class="page-container">
           <img class="page" src="img/page1-small.png">
           <img class="page" src="img/page2-small.png">
           <img class="page" src="img/page3-small.png">
           <img class="page" src="img/page4-small.png"> 
         </div>
-        <div class="page-display-con">
+        <div class="page-display-container">
           <img class="photo-overlay" src="img/photo-overlay.png">
           <img class="page-display" id="page-display" src="img/page1-large.png">
         </div>
@@ -147,12 +151,16 @@
           <img class="page" src="img/page8-small.png"> 
         </div>
       </div>
+
     </section>
    
-    <section class="fourth-row">
+    <section id="contact-form" class="fourth-row">
+      
       <div class="fourth-row-wrapper">
-        <h2>Contact</h2>
-        <h3>Before You Reach Out</h3>
+        
+        <h3>Contact</h3>
+        
+        <h5>Before You Reach Out</h5>
         <p>My rate is 30$ per hour. There is no negotiating on price. 
           Minimal session length is 1 hour after which incremental 
           billing will commence. Every client must sign a contract 
@@ -160,53 +168,56 @@
           and a cancelation policy.
         </p>
         
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePiaC2vJxJ7CP9GvBS-g3qoFeWBzNQceF9hEbdMlPiG9TYSA/formResponse">
-        <div class="input-container">
-          <div>   
-            <h3>Personal Info</h3> 
-            <input class="form-text-inputs" type="text" id="first-name" name="entry.1174935488" placeholder="First Name">
-            <input class="form-text-inputs" type="text" id="last-name" name="entry.1761074130" placeholder="Last Name">
-            <input class="form-text-inputs" type="email" id="email" name="entry.860456790" placeholder="e.g. hello@contact.net">
-          </div>
-          
-          <div>
-            <h3>I'm considering</h3>
-            <div class="checkbox-component">
-              <div class="row">
-                <label>Class Assignments</label>
-                <input type="checkbox" id="classassignments" name="entry.166687179" value="Class Assignments">
-                <label for="classassignments" class="checkmark1"></label>
-              </div>
-              <div class="row">
-                <label>PSAT/SAT/ACT Prep</label>
-                <input type="checkbox" id="sat-act-prep" name="entry.166687179"  value="PSAT/SAT/ACT Prep">
-                <label for="sat-act-prep" class="checkmark2"></label>
-              </div> 
-              <div class="row">
-                <label>College Writing Prep</label> 
-                <input type="checkbox" id="college-writing-prep" name="entry.166687179"  value="College Writing Prep">
-                <label for="college-writing-prep" class="checkmark3"></label>
-              </div>
-              <div class="row">
-                <label>Math Instruction</label>
-                <input type="checkbox" id="math-instruction" name="entry.166687179"  value="Math Instruction">
-                <label for="math-instruction" class="checkmark4"></label>
-              </div>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePiaC2vJxJ7CP9GvBS-g3qoFeWBzNQceF9hEbdMlPiG9TYSA/formResponse"> 
+          <div class="input-container">
+            <div>   
+              <h5>Personal Info</h5> 
+              <input class="form-text-inputs" type="text" id="first-name" name="entry.1174935488" placeholder="First Name">
+              <input class="form-text-inputs" type="text" id="last-name" name="entry.1761074130" placeholder="Last Name">
+              <input class="form-text-inputs" type="email" id="email" name="entry.860456790" placeholder="e.g. hello@contact.net">
             </div>
+            
+            <div> <!-- container  -->
+              <h5>I'm considering</h5>
+              <div class="checkbox-component">
+                <div class="row">
+                  <label>Class Assignments</label>
+                  <input type="checkbox" id="classassignments" name="entry.166687179" value="Class Assignments">
+                  <label for="classassignments" class="checkmark1"></label>
+                </div>
+                <div class="row">
+                  <label>PSAT/SAT/ACT Prep</label>
+                  <input type="checkbox" id="sat-act-prep" name="entry.166687179"  value="PSAT/SAT/ACT Prep">
+                  <label for="sat-act-prep" class="checkmark2"></label>
+                </div> 
+                <div class="row">
+                  <label>College Writing Prep</label> 
+                  <input type="checkbox" id="college-writing-prep" name="entry.166687179"  value="College Writing Prep">
+                  <label for="college-writing-prep" class="checkmark3"></label>
+                </div>
+                <div class="row">
+                  <label>Math Instruction</label>
+                  <input type="checkbox" id="math-instruction" name="entry.166687179"  value="Math Instruction">
+                  <label for="math-instruction" class="checkmark4"></label>
+                </div>   
+              </div>  <!-- checkbox-component div  -->
+            </div> <!-- container  -->
+          </div> <!-- fourth-row wrapper  -->
+
+          <div>
+            <h5>How can I help?</h5>
+            <textarea id="tmm" name="entry.1452614052" placeholder="Type your message here ... "></textarea>
+            <button type="submit">Submit</button>
           </div>
-        </div>
+        </form>
 
-        <div>
-           <h3>How can I help?</h3>
-           <textarea id="tmm" name="entry.1452614052" placeholder="Type your message here ... "></textarea>
-           <button type="submit">Submit</button>
-        </div>
-
-      </form>
     </section>
+
     <footer class="main-footer"> 
-    <div><span>The Grammar Pro</span> <br>
-         &nbsp;Copywrite 2020 | All Rights Reserved</div>
+      <div>
+        <span>The Grammar Pro</span> <br>
+        &nbsp;Copywrite 2020 | All Rights Reserved
+      </div>
     </footer>
     <script src="the-grammar-pro.js"></script>
   </body>
