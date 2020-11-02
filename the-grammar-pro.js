@@ -1,4 +1,18 @@
 // /* Pagination */ 
+
+
+document.getElementById("hamburger-menu").onclick = function() { 
+   if (document.getElementById("body").style.position === "fixed") {
+       document.getElementById("body").style.position = "static"; 
+   } else {
+       document.getElementById("body").style.position = "fixed";
+   }
+} 
+   
+
+
+
+
 function makeImageSwitcher(src) {
   return function() {
      document.getElementById('page-display').src = src 

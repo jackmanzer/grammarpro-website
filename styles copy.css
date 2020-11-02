@@ -717,7 +717,7 @@ p, ul {
 
     .fourth-row h3 {
         color: var(--creme);
-        margin-bottom: 2.2rem; 
+        margin-bottom: 1.5rem;
     }
     .fourth-row h5 { 
         color:var(--creme);
@@ -728,9 +728,9 @@ p, ul {
         color: var(--light-grey);
         margin-left: auto; 
         margin-right: auto;
-        margin-bottom: 1.5rem;
+        margin-bottom: .65rem;
         width: calc(100% - 2rem);
-        max-width: 31.58em;
+        max-width: 31.58rem;
         hyphens: auto;
     }
 
@@ -772,7 +772,7 @@ p, ul {
 
     input[type="email"]  {
         margin-top: .375rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: .75rem;
         box-sizing: border-box;
         width: calc(100% - 2rem);
         max-width: 20em;
@@ -975,8 +975,7 @@ p, ul {
         border: solid var(--creme) .1rem;
         background-color: var(--dark-grey);
         margin-bottom: 1.5rem;
-        max-width: 31rem;
-        outline: none;
+        max-width: 30rem;
     }
 
     button {
@@ -1236,7 +1235,7 @@ p, ul {
 
 /**** END: COLLEGE WRITING PREP STYLES ****/
 
-/**** BEGIN: COLLEGE WRITING MEDIA QUERIES ****/
+/**** BEGIN: COLLEGE WRITING MEDIA QUEERIES ****/
 
 @media screen and (min-width: 377px) { 
 
@@ -1248,7 +1247,7 @@ p, ul {
         display: none;
     }
 }
- /**** END: COLLEGE WRITING MEDIA QUERIES ****/
+ /**** END: COLLEGE WRITING MEDIA QUEERIES ****/
 
 /**** BEGIN: CLASS ASSIGNMENT STYLES ****/
 
@@ -1259,7 +1258,7 @@ p, ul {
  
  /**** END: CLASS ASSIGNMENT  STYLES ****/
  
- /**** BEGIN: CLASS ASSIGNMENT MEDIA QUERIES ****/
+ /**** BEGIN: CLASS ASSIGNMENT MEDIA QUEERIES ****/
  
  @media screen and (min-width: 323px) { 
  
@@ -1267,19 +1266,20 @@ p, ul {
          line-height: 3rem;
       }
  }
-  /**** END: CLASS ASSIGNMENT MEDIA QUERIES ****/
+  /**** END: CLASS ASSIGNMENT MEDIA QUEERIES ****/
 
 /* To Do's */
 /* 
 
-- landscape navigation bug 
-- clean up fourth row css
--cross browser testing 
-- cross retina display 
+- mobile navigation bug 
 - image resolutions |  
 - mobile button interactions 
+- font size changing in second-row  
+- text enlarged on landscape view on mobile 
 - revise secondary-content text 
-- mobile inputs 
+- margins for secondary-content text 
+- eliminating scroll bar on drop down navigation 
+- input length adjustments 
 
 
 */ 
@@ -1295,6 +1295,7 @@ p, ul {
 }
 
 body::after {
+    /* Change the `height` parameter here to match your base line-height. */
     background: url('data:image/svg+xml;utf8,<svg height="6" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 1)" /></svg>') repeat top left;
     
     content: "";
